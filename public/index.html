@@ -1,332 +1,163 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta property="og:title" content="Raúl Fuentes | Página Personal" />
-    <meta property="og:site_name" content="Raúl Fuentes | Página Personal" />
-    <meta property="og:description"
-        content="Desarrollador Web/Apps y Marketing Digital, esta es mi página principal." />
-    <meta property="og:locale" content="es-ES" />
+    <meta property="og:title" content="Raúl Fuentes | Personal Page" />
+    <meta property="og:site_name" content="Raúl Fuentes | Personal Page" />
+    <meta property="og:description" content="Web/Apps Developer and Digital Marketing, this is my main page." />
+    <meta property="og:locale" content="en-US" />
     <meta property="og:image" content="assets/img/profile.jpg">
     <meta name="description"
-        content="Desarrollador de Software, a lo largo de mi trayecto laboral me he tenido que adaptar a las oportunidades que se me han presentado, lo que me ha llevado a disfrutar de mis dos grandes pasiones, el marketing digital y la programación, he pasado de Marketing Manager a Desarrollador Web y después a Desarrollador de Apps.">
+        content="Software Developer, throughout my work journey I have had to adapt to the opportunities that have been presented to me, which has led me to enjoy my two great passions, digital marketing and programming, I have gone from Marketing Manager to Web Developer and then to Apps Developer.">
     <meta name="author" content="Raúl Fuentes" />
     <meta name="keywords"
-        content="Raúl, Raul Alejandro Fuentes Blanco,Raul Fuentes,Curriculum, Vitae, pagina personal, ingeniero de software, Desarrollador, desarrollador web, desarrollador de apps, python, flutter, kotlin, java, swift, clojure, tec de monterrey, c, marketing, firebase, github, git, aws, azure, ibm , ibm watson,  software, resume, software engineer, personal page, html5, css3, retina">
-    <title>Raúl Fuentes - Desarrollador</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        content="Raúl, Raul Alejandro Fuentes Blanco,Raul Fuentes,Curriculum, Vitae, personal page, software engineer, Developer, web developer, apps developer, python, flutter, kotlin, java, swift, clojure, tec de monterrey, c, marketing, firebase, github, git, aws, azure, ibm , ibm watson,  software, resume, software engineer, personal page, html5, css3, retina">
+    <title>Raúl Alejandro Fuentes Blanco - Senior Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .language-selector a {
+            padding: 8px;
+            color: white;
+            text-decoration: none;
+        }
 
+        .language-selector a:not(.active) {
+            background-color: grey;
+        }
 
-    <!-- Facebook chat optimization-->
-    <link rel="preconnect dns-prefetch" href="https://www.facebook.com" crossorigin>
-    <link rel="preconnect dns-prefetch" href="https://connect.facebook.net" crossorigin>
+        .active {
+            background-color: blue;
+        }
 
-
-    <!-- Google fonts-->
-    <link rel="stylesheet" rel="preload"
-        href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap"
-            rel="stylesheet" type="text/css" />
-    </noscript>
-    <link rel="stylesheet" rel="preload"
-        href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript>
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap" rel="stylesheet"
-            type="text/css" />
-    </noscript>
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link rel="stylesheet" rel="preload" href="css/styles.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript>
-        <link href="css/styles.css" rel="stylesheet" />
-    </noscript>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2H55HQ7Q1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-V2H55HQ7Q1');
-    </script>
+        @media screen and (max-width: 480px) {
+            .language-selector {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 4px;
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
 
-<body id="page-top">
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v7.0'
-            });
-        };
+<body class="bg-blue-300 text-gray-800"
+    style="background-image: url('https://source.unsplash.com/user/vrrosario/2400x3200/');">
+    <div class="container mx-auto p-4">
+        <div class="bg-white shadow-md rounded p-6">
+            <div class="language-selector">
+                <a href="" class="active">EN</a> |
+                <a href="./index-es.html" class="">ES</a>
+            </div>
+            <div class="text-center">
+                <h1 class="text-3xl font-bold">Raul Alejandro Fuentes Blanco</h1>
+                <p class="text-xl">Senior Software Engineer | Flutter | Clojure</p>
+                <p>Location: Mexico City, Mexico</p>
+                <a href="mailto:raul@fuentesblan.co" class="text-blue-500">raul@fuentesblan.co</a> |
+                <a href="https://www.linkedin.com/in/raúl-fuentes" class="text-blue-500">LinkedIn</a>
+            </div>
 
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="mt-8">
+                <h2 class="text-2xl font-semibold mb-4">Professional Summary</h2>
+                <p>A dedicated full-time software developer and tech enthusiast, constantly seeking new knowledge and
+                    eager to tackle technological challenges. With solid experience in full-stack development, I have
+                    led teams and contributed to the success of projects in diverse sectors, from healthcare to
+                    governmental solutions.</p>
+            </div>
 
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="715654532104603" theme_color="#bd5d38"
-        logged_in_greeting="¡Hola!, ¿en qué puedo ayudarte?" logged_out_greeting="¡Hola!, ¿en qué puedo ayudarte?">
-    </div>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Raúl Fuentes</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="assets/img/profile.jpg" alt="Imagen de Perfil" /></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Acerca">Acerca</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Experiencia">Experiencia</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Educacion">Educación</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Habilidades">Habilidades</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Intereses">Intereses</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Logros">Logros</a></li>
-            </ul>
+            <div class="mt-8">
+                <h2 class="text-2xl font-semibold mb-4">Languages</h2>
+                <ul class="list-disc list-inside">
+                    <li>English (Full Professional Proficiency)</li>
+                    <li>Spanish (Native or Bilingual Proficiency)</li>
+                    <li>Portuguese (Limited Working Proficiency)</li>
+                    <li>French (Limited Working Proficiency)</li>
+                </ul>
+            </div>
+
+            <div class="mt-8">
+                <h2 class="text-2xl font-semibold mb-4">Certifications</h2>
+                <p>PCEP – Certified Entry-Level Python Programmer</p>
+            </div>
+
+            <div class="mt-8">
+                <h2 class="text-2xl font-semibold mb-4">Professional Experience</h2>
+                <!-- Incluyendo la experiencia profesional restante aquí -->
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-xl font-bold">NuBank</h3>
+                        <p class="text-md italic">Senior Software Engineer, June 2023 - Present</p>
+                        <p>Engaged in full-stack development with Clojure and Flutter, contributing to the innovation
+                            and continuous improvement of the NuBank app.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">The Ksquare Group</h3>
+                        <p class="text-md italic">Software Engineer (Technical Group Lead), July 2022 - June 2023</p>
+                        <p>Led a team of over 15 professionals in multi-platform application development with Flutter,
+                            notably a portal for Miami-based hospitals.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Econocom Gigigo</h3>
+                        <p class="text-md italic">Sr Mobile Flutter Developer, August 2021 - April 2022</p>
+                        <p>Engaged in mobile solution development and contributed to various projects enhancing company
+                            operations.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Soluciones SIG</h3>
+                        <p class="text-md italic">Software Engineer, November 2019 - November 2021</p>
+                        <p>Developed solutions for DIF de Morelos, the government of Querétaro, and the government of
+                            Morelos, including web apps and mobile apps, as well as internal solutions for daily company
+                            operations.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Badak</h3>
+                        <p class="text-md italic">Full Stack Developer, November 2020 - June 2021</p>
+                        <p>Focused on mobile application development with Flutter and native technologies, as well as
+                            web apps using the MERN stack. Assigned to a client project involving React, Java Spring,
+                            and PostgreSQL.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Fobutec Agencia de Diseño Web y Apps</h3>
+                        <p class="text-md italic">Software Engineer, February 2017 - November 2019</p>
+                        <p>Contributed to web and app design solutions, enhancing the digital presence and operational
+                            efficiencies of clients in the Mexico City area.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h2 class="text-2xl font-semibold">Education</h2>
+                <p>Bachelor of Engineering, Computer Systems Engineering, 2016 - 2021</p>
+            </div>
+            <div class="mt-8">
+                <h2 class="text-2xl font-semibold mb-4">Achievements and Certifications</h2>
+                <ul class="list-disc list-inside">
+                    <li>PCEP - Certified Entry-Level Python Programmer</li>
+                    <li>CCNA1 Routing and Switching: Introduction to Networks - Cisco</li>
+                    <li>IBM Watson Course: Business Models Empowered by Cognitive Computing - IBM and Tec de Monterrey
+                    </li>
+                    <li>Recognition for the "Sentiment Analysis on Social Media for the United Nations" project - Tec de
+                        Monterrey and United Nations Information Center</li>
+                    <li>3rd Place - HackMx2 developing a project for "El Universal" to obtain Twitter profile analysis
+                        and a pothole detection tool for the government using Google's computer vision and machine
+                        learning (2019)</li>
+                    <li>3rd Place - HackMx developing a Blockchain project for the banking sector, Hackathon organized
+                        by Tec de Monterrey, IBM, Microsoft, and others (2018)</li>
+                </ul>
+            </div>
         </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-        <!-- Acerca-->
-        <section class="resume-section" id="Acerca">
-            <div class="resume-section-content">
-                <h1 class="mb-0">
-                    Raúl
-                    <span class="text-primary">Fuentes</span>
-                </h1>
-                <div class="subheading mb-5">
-                    Estado de México, México ·
-                    <a href="mailto:raul@fuentesblan.co"> <i class="far fa-envelope"></i> raul@fuentesblan.co </a>
-                </div>
-                <p class="lead mb-5">Desarrollador de Software, a lo largo de mi trayecto laboral me he tenido que
-                    adaptar a las oportunidades que se me han presentado, lo que me ha llevado a disfrutar de mis dos
-                    grandes pasiones, el marketing digital y la programación, he pasado de
-                    Marketing Manager a Desarrollador Web y después a Desarrollador de Apps. </p>
-                <div class="social-icons">
-                    <a class="social-icon"
-                        href="https://www.linkedin.com/in/ra%C3%BAl-alejandro-fuentes-blanco-8093b7129/" rel="noopener"
-                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="https://github.com/RLZW" rel="noopener" target="_blank"><i
-                            class="fab fa-github"></i></a>
 
-                    <a class="social-icon" href="https://www.hackerrank.com/rulazw" rel="noopener" target="_blank"><i
-                            class="fab fa-hackerrank"></i></a>
-
-                    <a class="social-icon" href="https://dev.to/rlzw" target="_blank" rel="noopener"><i
-                            class="fab fa-dev"></i></a>
-
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Experiencia-->
-        <section class="resume-section" id="Experiencia">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Experiencia</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Desarrollador de Software</h3>
-                        <div class="subheading mb-3">SOLUCIONES SIG S.A DE C.V</div>
-                        <p>Me dedico al desarrollo de soluciones para el DIF de Morelos, el gobierno de Querétaro y el
-                            gobierno de Morelos, como lo que fueron web apps y apps móviles, al igual que soluciones
-                            internas para el trabajo diario de la compañía.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Noviembre 2019 - Actualidad</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Desarrollador Web / Marketing Manager <span class="text-primary">
-                                VOLUNTARIO</span> </h3>
-                        <div class="subheading mb-3">Associação Nossa Voz em Ação (Brasil)
-                        </div>
-                        <p>Me dediqué al desarrollo de una página web para la asociación al igual que ayude a la
-                            planeación y ejecución de una campaña de marketing digital para la recaudación de fondos.
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Junio 2019 - Agosto 2019</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Desarrollador Web / Apps</h3>
-                        <div class="subheading mb-3">Fobutec Agencia de desarrollo y marketing digital</div>
-                        <p>Me dediqué al desarrollo de software y a la adminitración de los proyectos de la empresa, en
-                            mi equipo del cual estaba estaba encargado contaba con la responsabilidad de 3
-                            desarrolladores y un diseñador.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Febrero 2017 - Noviembre 2019</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Marketing Manager</h3>
-                        <div class="subheading mb-3">TuEmbarca.com</div>
-                        <p>Me dediqué a planear, ejecturar y llevar el seguimiento de campañas de marketing digital,
-                            también estaba a cargo del reclutamiento de proveedores, la respuesta directa a
-                            clientes interesados y las relaciones públicas.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Marzo 2016 - Diciembre 2016</span></div>
-                </div>
-
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Educación-->
-        <section class="resume-section" id="Educacion">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Educación</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">INSTITUTO TECNOLÓGICO DE ESTUDIOS SUPERIORES DE MONTERREY</h3>
-                        <div class="subheading mb-3">CAMPUS: Estado de México</div>
-                        <div>Ing. en Sistemas Computacionales</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Junio 2016 - Junio -2021</span></div>
-                </div>
-
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Habilidades-->
-        <section class="resume-section" id="Habilidades">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Habilidades</h2>
-                <div class="subheading mb-3">Lenguajes de Programación y Herramientas</div>
-                <ul class="list-inline dev-icons">
-                    <li class="list-inline-item"><img src="./assets/img/flutter.svg" alt="Ícono Flutter" width="33px"
-                            height="60.45px" style="vertical-align: sub;
-                            filter:grayscale(1000%);
-                        
-                        "></img></li>
-                    <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-java"></i></i></li>
-                    <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-git"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-aws"></i></li>
-
-                    <li class="list-inline-item"><i class="fab fa-adobe"></i></li>
-
-
-
-                </ul>
-                <div class="subheading mb-3">Habilidades</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Orientado a resultados
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Autodidacta
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Mobile-First y diseño responsivo
-                    </li>
-
-
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Desarrollo ágil y SCRUM
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Pixel Perfect
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Intereses-->
-        <section class="resume-section" id="Intereses">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Intereses</h2>
-                <p>Aparte de programando, disfruto mi tiempo viajando, haciendo mecánica con mi padre, saliendo con mi
-                    novia, tomando cursos y jugando videojuegos con amigos, estoy aprendiendo a tocar el piano y a
-                    modelar/animar en 3D con cursos de Blender.</p>
-
-                <p class="mb-0">Me encataría poder trabajar en una empresa donde pueda mezclar al mismo tiempo mis dos
-                    pasiones el marketing y la programación</p>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Logros-->
-        <section class="resume-section" id="Logros">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Logros y certificaciones</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                        CCNA1 Routing and Switching: Introduction to Networks - Cisco
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                        Curso IBM Watson: Modelos de Negocio Potenciados por Cómputo Cognitivo - IBM y Tec de Monterrey
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                        Reconocimiento de proyecto de "Análisis de Sentimientos en Redes Sociales para ONU" - Tec de
-                        Monterrey y Centro de Información de la Organizacón de las Naciones Unidas
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        3
-                        <sup>er</sup>
-                        Lugar - HackMx2 desarrollando un proyecto para "El Universal" para obtener análisis de su
-                        perfil de Twitter y una herramienta de detección de baches para el gobierno utilizando visión
-                        computacional y machine learning de Google . (2019)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        3
-                        <sup>er</sup>
-                        Lugar - HackMx desarrollando un proyecto de Blockchain para el sector bancario, Hackathon
-                        organizado por el Tec de Monterrey, IBM, Microsoft y demás (2018).
-                    </li>
-
-
-                </ul>
-            </div>
-        </section>
     </div>
+    <footer
+        style="text-align: center; font-size: 1.2em; color: #333; padding: 20px; margin-bottom: 20px; background-color: #f9f9f9;">
+        <p>Thanks to <a href="https://unsplash.com/@vrrosario" target="_blank"
+                style="color: #007BFF; text-decoration: none;">Victor Rosario</a> for the images.</p>
+    </footer>
 
-    <!-- Font Awesome icons (free version)-->
-    <script defer src="https://kit.fontawesome.com/f83eca125d.js" crossorigin="anonymous"></script>
-
-
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 
 </body>
+
 
 </html>
